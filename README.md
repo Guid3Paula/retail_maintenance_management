@@ -2,7 +2,7 @@
 
 [English](README.md) | [Português](README.pt-BR.md)
 
-A Python-based application designed to simulate maintenance management across a large supermarket network.
+A Python-based application designed to simulate maintenance management across  large supermarket network.
 
 The project applies Object-Oriented Programming concepts to represent stores, maintenance orders, budgets, costs, operational history, and different business rules for preventive, corrective, and emergency maintenance.
 
