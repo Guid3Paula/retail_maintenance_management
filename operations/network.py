@@ -1,6 +1,6 @@
-
-
-
+from entities.store import Loja
+from entities.maintenance import (OrdemManutencao, OrdemManutencaoPreventiva, OrdemManutencaoCorretiva, OrdemManutencaoEmergencial)
+from utils.exceptions import OrdemManutencaoInexistenteError
 
 
 # Define a Rede de Supermercados
@@ -26,7 +26,7 @@ class RedeSupermercados:
     # Método para adicionar uma nova loja à rede
     def adicionar_loja(self, nome: str, id_loja: str) -> Loja:
 
-        """Criar e adiciona uma nova loja à rede de supermercados."""
+        """Cria e adiciona uma nova loja à rede de supermercados."""
 
         # Verifica se já existe loja com o mesmo ID
         if id_loja in self._lojas:
@@ -82,6 +82,5 @@ class RedeSupermercados:
 
         # Se a ordem não for encontrada, exibe uma mensagem de erro
         if not ordem:
-            print(f"Erro: Ordem de manutenção com ID {id_ordem} não encontrada.")
-            return None
+            raise OrdemManutencaoInexistenteError(id_ordem)
         return ordem
