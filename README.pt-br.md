@@ -1,6 +1,6 @@
 # Sistema de Gestão de Manutenção para Rede de Supermercados
 
-[English](README.md) | [Português](README.pt-BR.md)
+[English](README.md) | [Português](README.pt-br.md)
 
 Aplicação desenvolvida em Python para simular a gestão de manutenção de uma rede de supermercados de grande porte.
 
